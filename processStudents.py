@@ -99,7 +99,9 @@ print(student_dict["studentID"])
 
 
 # print out the corresponding GPA from the dictionary
-print(student_dict["gpa"])
+find_gpa = student_dict.get("567890123", "Key not found")
+print(find_gpa)
+
 
 # close the outfile
 outfile.close()
